@@ -48,4 +48,24 @@ public class Word {
     public void setMeaning(String meaning) {
         this.meaning = meaning;
     }
+
+    //Word 클래스에 있는 정보들을 하나의 문장으로 나열하는 구조로 만들어보겠음
+    //우클릭 -> generate -> overriding -> toString()
+    /* < 출력 구성 화면 >
+    * 1 *           electric 전기의, 전기를 생산하는
+    * 2 *               pole 기둥, 장대
+    * */
+    @Override
+    public String toString() {
+        String slevel = "" ; //난이도 별표로 출력
+        for(int i=0; i<level ; i++) slevel += "*" ;
+
+        // 원하는 format 의 문자열 만들기.
+        String str = String.format("%-3s", slevel)
+                + String.format("%15s", word) + "  " + meaning ;
+
+        return str ;
+    }
+
+
 }

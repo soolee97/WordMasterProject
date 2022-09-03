@@ -35,7 +35,7 @@ public class WordManager {
                 "7. 파일 저장\n" +
                 "0. 나가기\n" +
                 "*******************\n" +
-                " => 원하는 메뉴는 ? ");
+                "=> 원하는 메뉴는 ? ");
         return s.nextInt() ; //정수형태로 입력 받기
     }
     public void start(){
@@ -44,10 +44,11 @@ public class WordManager {
             if(menu == 0) break ;
             if(menu == 4){
                 // 메뉴 추가
-                wordCRUD.addWord() ;
+                wordCRUD.addWord() ; // addWord 호출
             }
             else if(menu ==1){
                 // 조회
+                wordCRUD.listAlL() ;
             }
         }
     }
