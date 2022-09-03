@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Second Commit : add class WordManager, WordCRUD" />
+    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Third Commit : gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662176614244</updated>
-      <workItem from="1662176615808" duration="683000" />
+      <workItem from="1662176615808" duration="2798000" />
     </task>
     <task id="LOCAL-00001" summary="Second Commit : add class WordManager, WordCRUD">
       <created>1662177279786</created>
@@ -55,7 +59,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662177279786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Third Commit : gitignore">
+      <created>1662177499561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662177499561</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second Commit : add class WordManager, WordCRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Commit : add class WordManager, WordCRUD" />
+    <MESSAGE value="Third Commit : gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third Commit : gitignore" />
   </component>
 </project>
