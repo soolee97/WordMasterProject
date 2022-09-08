@@ -69,4 +69,45 @@ public class WordCRUD implements ICRUD{
         }
         System.out.println("----------------------------");
     }
+
+    //오버로딩으로 키워드를 입력받는 listAll 함수 생성
+    public ArrayList<Integer> listAll(String keyword){ // 어레이 리스트로 반환
+        ArrayList<Integer> idlist = new ArrayList<>() ;
+        int j = 0 ;
+        System.out.println("----------------------------");
+        for(int i=0 ; i<list.size() ; i++){
+            String word = list.get(i).getWord() ;
+            if(!word.contains(keyword)) {
+                continue ; // 입력받은 키워드가 word 리스트 안에 없으면 아래 실행 x
+            }
+            // 수치는 i 의 숫자가 하나씩 증가
+            System.out.print((j+1) + " "); //i 가 아니라 j (키워드가 포함 되어 있을 때에만 이 코드가 실행되기 때문에)
+            System.out.println(list.get(i).toString());
+            idlist.add(i) ; //해당하는 키워드가 포함 되어 있으면 idlist에 추가
+            j ++ ;
+        }
+        System.out.println("----------------------------");
+        return idlist ;
+    }
+
+    public void updateItem() {
+        System.out.print("=> 수정할 단어 검색 : ");
+        String keyword = s.next() ; //공백을 입력하지 않게 하기 위함.
+
+        ArrayList<Integer> idlist = this.listAll(keyword) ; //현재 idlist 는 입력받은 키워드가 포함된 단어들의 값만 있음
+
+        System.out.print("=> 수정할 번호 검색 : ");
+        int id = s.nextInt() ;
+        s.nextLine() ; //id 를 입력하고 나서 엔터 버퍼 입력받는 공간
+
+        System.out.print("=> 뜻 입력 : ") ;
+        String meaning = s.nextLine() ;
+
+        Word word = list.get(idlist.get(id-1)) ; //사용자가 입력한 아이디
+        //객체의 뜻 바꿔주기
+        word.setMeaning(meaning);
+        System.out.println("단어가 수정되었습니다.");
+    }
+
+
 }

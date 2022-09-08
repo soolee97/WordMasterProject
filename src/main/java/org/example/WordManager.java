@@ -50,6 +50,14 @@ public class WordManager {
                 // 조회
                 wordCRUD.listAlL() ;
             }
+            else if(menu == 5){
+                // 데이터 업데이트 기능
+                wordCRUD.updateItem() ;
+            }
+            else if(menu == 6){
+                // 데이터 삭제 기능
+
+            }
         }
     }
 
