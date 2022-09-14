@@ -6,11 +6,6 @@ import java.util.Scanner;
 public class WordCRUD implements ICRUD{
     ArrayList<Word> list ; //데이터 관리 타입
     Scanner s = new Scanner(System.in) ;
-    /*
-    * => 난이도 (1,2,3) & 새 단어 입력 : 1 drive way
-    * 뜻 입력 : 차고 진입로
-    * 새 단어가 단어장에 추가되었습니다.
-    * */
 
     //WordCRUD라는 생성자를 만들 때 객체화 하기 위한.
     WordCRUD(Scanner s){
@@ -31,7 +26,7 @@ public class WordCRUD implements ICRUD{
         return new Word(0, level, word, meaning) ;
     }
 
-    public void addWord(){
+    public void addItem(){
         // 리스트에 추가하는 부분 구현
         Word one = (Word)add() ; //객체 생성 return type이 object 이기 때문에 (Word)
         list.add(one) ; //리스트에 추가
@@ -110,4 +105,26 @@ public class WordCRUD implements ICRUD{
     }
 
 
+    public void deleteItem() {
+        /*update item 과 코드가 유사하다*/
+        System.out.print("=> 삭제할 단어 검색 : ");
+        String keyword = s.next() ; //공백을 입력하지 않게 하기 위함.
+
+        ArrayList<Integer> idlist = this.listAll(keyword) ; //현재 idlist 는 입력받은 키워드가 포함된 단어들의 값만 있음
+
+        System.out.print("=> 삭제할 번호 검색 : ");
+        int id = s.nextInt() ;
+        s.nextLine() ; //id 를 입력하고 나서 엔터 버퍼 입력받는 공간
+
+        System.out.print("=> 정말로 삭제하실래요? (Y/n) ") ;
+        String ans = s.next() ;
+        if(ans.equalsIgnoreCase("Y")){//equalsIgnoreCase -> 대소문자 구분 안함
+            list.remove(idlist.get(id-1)) ; //데이터 삭제(번호-1)
+            System.out.println("단어가 삭제 되었습니다.");
+        } else{
+            System.out.println("취소 되었습니다.");
+        }
+
+
+    }
 }

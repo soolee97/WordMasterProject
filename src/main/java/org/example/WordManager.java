@@ -44,7 +44,7 @@ public class WordManager {
             if(menu == 0) break ;
             if(menu == 4){
                 // 메뉴 추가
-                wordCRUD.addWord() ; // addWord 호출
+                wordCRUD.addItem() ; // addWord 호출
             }
             else if(menu ==1){
                 // 조회
@@ -56,7 +56,7 @@ public class WordManager {
             }
             else if(menu == 6){
                 // 데이터 삭제 기능
-
+                wordCRUD.deleteItem() ;
             }
         }
     }

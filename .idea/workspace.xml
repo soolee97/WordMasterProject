@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Fifth Commit - CR">
+    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Sixth Commit - add menu 5.단어 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
     </list>
@@ -53,6 +54,9 @@
       <workItem from="1662176615808" duration="7018000" />
       <workItem from="1662343669023" duration="1213000" />
       <workItem from="1662599869984" duration="2215000" />
+      <workItem from="1662609616208" duration="1045000" />
+      <workItem from="1663052229275" duration="1477000" />
+      <workItem from="1663115070121" duration="1015000" />
     </task>
     <task id="LOCAL-00001" summary="Second Commit : add class WordManager, WordCRUD">
       <created>1662177279786</created>
@@ -82,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662181557246</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Sixth Commit - add menu 5.단어 수정">
+      <created>1662609813714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662609813714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +115,7 @@
     <MESSAGE value="Third Commit : gitignore" />
     <MESSAGE value="Fourth Commit" />
     <MESSAGE value="Fifth Commit - CR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fifth Commit - CR" />
+    <MESSAGE value="Sixth Commit - add menu 5.단어 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sixth Commit - add menu 5.단어 수정" />
   </component>
 </project>
