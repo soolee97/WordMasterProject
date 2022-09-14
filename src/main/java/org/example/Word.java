@@ -56,7 +56,7 @@ public class Word {
     * 2 *               pole 기둥, 장대
     * */
     @Override
-    public String toString() {
+    public String toString() { //화면에 출력할 때 일정한 포맷으로 출력하기 위한 함수
         String slevel = "" ; //난이도 별표로 출력
         for(int i=0; i<level ; i++) slevel += "*" ;
 
@@ -65,6 +65,11 @@ public class Word {
                 + String.format("%15s", word) + "  " + meaning ;
 
         return str ;
+    }
+
+    public String toFileString(){ //데이터들을 파일에 저장할 때의 포맷을 저장해놓는 함수
+        //return 값을 문자로 ! 이렇게 지정할 수 있구나..
+        return this.level + "|" + this.word + "|" + this.meaning ;
     }
 
 

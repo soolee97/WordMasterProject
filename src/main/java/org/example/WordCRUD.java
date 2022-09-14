@@ -1,9 +1,6 @@
 package org.example;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -170,6 +167,20 @@ public class WordCRUD implements ICRUD{
     }
 
     public void saveFile() { //수정한 파일을 저장하는 함수
+        try {
+            //PrintWriter pr = new PrintWriter(new FileWriter("test.txt")) ; //fname 을 원래는 해야하지만 test.txt임의의 파일로 먼저 테스트를 해보는 것이 좋음
+            PrintWriter pr = new PrintWriter(new FileWriter(fname)) ;
+            /*리스트에 있는 데이터들을 파일에 작성해야한다.
+            * 파일 포맷을 확인하기. (예를 들어 '|' 가 있다는 둥)
+            * */
+            for(Word one : list) { //이게 뭐임???
+                pr.write(one.toFileString() + "\n") ; //toFileString -> word 클래스 안에 있음
+            }
+            System.out.println("==> 데이터 저장 완료!!");
 
+            pr.close() ; //파일 열었기 때문에 종료
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

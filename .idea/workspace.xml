@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Seventh Commit - add menu 6. 단어 삭제">
-      <change afterPath="$PROJECT_DIR$/Dictionary.txt" afterDir="false" />
+    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Eighth Commit - 파일 삭제 함수 수정 + 파일 불러오기 함수 생성">
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +31,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EF1eQtq7Sijyr9Saglb0WV4H5R" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -80,7 +83,7 @@
       <workItem from="1662599869984" duration="2215000" />
       <workItem from="1662609616208" duration="1045000" />
       <workItem from="1663052229275" duration="1477000" />
-      <workItem from="1663115070121" duration="3334000" />
+      <workItem from="1663115070121" duration="4683000" />
     </task>
     <task id="LOCAL-00001" summary="Second Commit : add class WordManager, WordCRUD">
       <created>1662177279786</created>
@@ -124,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663120559339</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Eighth Commit - 파일 삭제 함수 수정 + 파일 불러오기 함수 생성">
+      <created>1663122701483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663122701483</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,12 +152,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Second Commit : add class WordManager, WordCRUD" />
     <MESSAGE value="Third Commit : gitignore" />
     <MESSAGE value="Fourth Commit" />
     <MESSAGE value="Fifth Commit - CR" />
     <MESSAGE value="Sixth Commit - add menu 5.단어 수정" />
     <MESSAGE value="Seventh Commit - add menu 6. 단어 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seventh Commit - add menu 6. 단어 삭제" />
+    <MESSAGE value="Eighth Commit - 파일 삭제 함수 수정 + 파일 불러오기 함수 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eighth Commit - 파일 삭제 함수 수정 + 파일 불러오기 함수 생성" />
   </component>
 </project>
