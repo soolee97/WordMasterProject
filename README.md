@@ -55,9 +55,9 @@
 
 
 ### 텍스트 파일 저장 위치 및 경로
-1) 파일 위치 스크린샷 \n
-파일 이름 : Dictionary.txt
+1) 파일 위치 스크린샷
+- 파일 이름 : Dictionary.txt
 <img src = 'screenshot/텍스트파일.png' width = 300> 
 
-2) 파일 경로 링크 \n
-D:\2022-2\실전프로젝트1\javaProject_WordMasterProject\2022-2-Project\HelloProject_Starbucks\WordMasterProject\Dictionary.txt
+2) 파일 경로 링크
+- D:\2022-2\실전프로젝트1\javaProject_WordMasterProject\2022-2-Project\HelloProject_Starbucks\WordMasterProject\Dictionary.txt
