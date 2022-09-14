@@ -208,4 +208,12 @@ public class WordCRUD implements ICRUD{
         /*listAll 이라는 함수 이용 (원하는 키워드만 입력하면 원하는 데이터 볼 수있었음) -> 오버로딩*/
         listAll(level) ;
     }
+
+    public void searchWord() {
+        System.out.print("=> 원하는 단어는? ") ;
+        String keyword = s.next() ; //공백을 허용하지 않는 문자열 입력받기
+
+        /*listAll 함수 사용*/
+        listAll(keyword) ;
+    }
 }
