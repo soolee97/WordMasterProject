@@ -55,7 +55,7 @@
 
 
 ### 텍스트 파일 저장 위치 및 경로
-1) 파일 위치 스크린샷
+1) 파일 위치 스크린샷 \
 파일 이름 : Dictionary.txt
 <img src = 'screenshot/텍스트파일.png' width = 300> 
 
