@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Nineth Commit - 파일을 저장하는 함수 구현">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WordManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="76e6f6f0-a13d-429e-a9ac-1e3d6d35bb5c" name="Changes" comment="Eleventh Commit - 단어를 검색 기능 구현" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +77,7 @@
       <workItem from="1662599869984" duration="2215000" />
       <workItem from="1662609616208" duration="1045000" />
       <workItem from="1663052229275" duration="1477000" />
-      <workItem from="1663115070121" duration="5341000" />
+      <workItem from="1663115070121" duration="5660000" />
     </task>
     <task id="LOCAL-00001" summary="Second Commit : add class WordManager, WordCRUD">
       <created>1662177279786</created>
@@ -139,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663124003908</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Tenth Commit - 수준별 단어를 검색해서 화면에 보이는 함수 생성">
+      <created>1663124667510</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663124667510</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Tenth Commit - 수준별 단어를 검색해서 화면에 보이는 함수 생성">
+      <created>1663124912752</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663124912752</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +176,8 @@
     <MESSAGE value="Seventh Commit - add menu 6. 단어 삭제" />
     <MESSAGE value="Eighth Commit - 파일 삭제 함수 수정 + 파일 불러오기 함수 생성" />
     <MESSAGE value="Nineth Commit - 파일을 저장하는 함수 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nineth Commit - 파일을 저장하는 함수 구현" />
+    <MESSAGE value="Tenth Commit - 수준별 단어를 검색해서 화면에 보이는 함수 생성" />
+    <MESSAGE value="Eleventh Commit - 단어를 검색 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="Eleventh Commit - 단어를 검색 기능 구현" />
   </component>
 </project>
