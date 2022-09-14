@@ -5,5 +5,4 @@ public class Main {
         System.out.println("Hello world!");
         new WordManager().start() ; //익명 메서드
     }
-
 }

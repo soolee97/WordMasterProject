@@ -1,11 +1,16 @@
 package org.example;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WordCRUD implements ICRUD{
     ArrayList<Word> list ; //데이터 관리 타입
     Scanner s = new Scanner(System.in) ;
+    final String fname = "Dictionary.txt" ; //수정하지 않을 것이기 때문에 'final'로 지정
 
     //WordCRUD라는 생성자를 만들 때 객체화 하기 위한.
     WordCRUD(Scanner s){
@@ -119,12 +124,52 @@ public class WordCRUD implements ICRUD{
         System.out.print("=> 정말로 삭제하실래요? (Y/n) ") ;
         String ans = s.next() ;
         if(ans.equalsIgnoreCase("Y")){//equalsIgnoreCase -> 대소문자 구분 안함
-            list.remove(idlist.get(id-1)) ; //데이터 삭제(번호-1)
+            list.remove((int)idlist.get(id-1)) ; //데이터 삭제(번호-1)
             System.out.println("단어가 삭제 되었습니다.");
         } else{
             System.out.println("취소 되었습니다.");
         }
+    }
 
+    public void loadFile()  { // Dictionary.txt를 불러오는 함수 -> 호출 -> 프로그램이 구동되기 전에 호출 -> select menu 에서 메뉴를 보여주기 전에 호출
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fname)) ;
+            String line ;
+            int count = 0 ;  // 데이터에 있는 단어의 갯수를 세는 변수
+
+            while(true){ //반복문이 종료 되는 시점 잘 보기 ! 중요함.
+                /*한줄 씩 읽어오기*/
+                line = br.readLine() ; //한줄씩 읽어온다 readLine()
+                if(line == null) break ;
+
+                /*'바' 를 기준으로 쪼개기*/
+                String data[] = line.split("\\|") ;
+
+                //1. '|'는 원래 문자로 인식이 되질 않는다. 그래서 앞에 '\\'를 붙여 줘야 문자로 인식을 해서 구분한다.
+                //2. dictionary.txt 내에 데이터가 많기 때문에,
+
+                /* 쪼갠 값들을 임의의 변수에 type에 맞게 저장 */
+                int level = Integer.parseInt(data[0]) ; //저장된 데이터의 가장 첫번째 숫자는 '난이도'임.
+                                                        // 근데 저장된 데이터는 문자열이기 때문에 데이터를 숫자로 바꿔줘야함.
+                String word = data[1] ; //단어
+                String meaning = data[2] ; //뜻
+
+                /*임의의 변수에 저장된 데이터들을 원래 '리스트'에 저장해야한다. */
+                //Word에 생성자 활용 !! -> project 메뉴에 Word 에서 constructon 보기
+                list.add(new Word(0, level, word, meaning)) ;
+                count ++ ;
+
+            }
+            br.close() ;
+            /*데이터를 로딩을 잘 하고 파일이 닫혔으면 데이터 로딩 완료라는 문구가 뜨게 하면된다. */
+            System.out.println("==> "+ count + "개 단어 로딩 완료!!!") ;
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void saveFile() { //수정한 파일을 저장하는 함수
 
     }
 }

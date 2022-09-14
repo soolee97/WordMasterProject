@@ -39,9 +39,14 @@ public class WordManager {
         return s.nextInt() ; //정수형태로 입력 받기
     }
     public void start(){
+
+        wordCRUD.loadFile(); //while문이 실행되기 이전에 파일을 로드해줘야
         while(true) {
             int menu = selectMenu();
-            if(menu == 0) break ;
+            if(menu == 0) {
+                System.out.println("프로그램이 종료 되었습니다!");
+                break ;
+            }
             if(menu == 4){
                 // 메뉴 추가
                 wordCRUD.addItem() ; // addWord 호출
@@ -57,6 +62,10 @@ public class WordManager {
             else if(menu == 6){
                 // 데이터 삭제 기능
                 wordCRUD.deleteItem() ;
+            }
+            else if(menu == 7){
+                // 데이터 삭제 기능
+                wordCRUD.saveFile() ;
             }
         }
     }
