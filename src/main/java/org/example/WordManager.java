@@ -55,6 +55,10 @@ public class WordManager {
                 // 조회
                 wordCRUD.listAlL() ;
             }
+            else if(menu ==2){
+                // 수준별로 단어 검색하는 기능
+                wordCRUD.searchLevel() ;
+            }
             else if(menu == 5){
                 // 데이터 업데이트 기능
                 wordCRUD.updateItem() ;

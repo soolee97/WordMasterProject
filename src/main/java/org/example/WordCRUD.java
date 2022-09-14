@@ -87,6 +87,23 @@ public class WordCRUD implements ICRUD{
         return idlist ;
     }
 
+    // 함수 이름만 재사용하고 파라미터의 개수를 다르게 하는 경우 -> '오버 로딩' 으로 함수를 여러개 만들 수 있다
+    public void listAll(int level) { // 수준별로 데이터를 출력
+        int j = 0 ;
+        System.out.println("----------------------------");
+        for(int i=0 ; i<list.size() ; i++){
+            int ilevel = list.get(i).getLevel() ; //각 데이터들의 레벨
+            if(ilevel != level) {
+                continue ; // 입력받은 레벨의 경우가 아니면 그냥 continue
+            }
+            // 수치는 i 의 숫자가 하나씩 증가
+            System.out.print((j+1) + " "); //i 가 아니라 j (키워드가 포함 되어 있을 때에만 이 코드가 실행되기 때문에)
+            System.out.println(list.get(i).toString()) ;
+            j ++ ;
+        }
+        System.out.println("----------------------------");
+    }
+
     public void updateItem() {
         System.out.print("=> 수정할 단어 검색 : ");
         String keyword = s.next() ; //공백을 입력하지 않게 하기 위함.
@@ -175,12 +192,20 @@ public class WordCRUD implements ICRUD{
             * */
             for(Word one : list) { //이게 뭐임???
                 pr.write(one.toFileString() + "\n") ; //toFileString -> word 클래스 안에 있음
-            }
+            } 
             System.out.println("==> 데이터 저장 완료!!");
 
             pr.close() ; //파일 열었기 때문에 종료
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void searchLevel() { // 수준별로 단어를 검색하는 기능
+        System.out.print("=> 원하는 레벨은? (1~3) ") ;
+        int level = s.nextInt() ;
+
+        /*listAll 이라는 함수 이용 (원하는 키워드만 입력하면 원하는 데이터 볼 수있었음) -> 오버로딩*/
+        listAll(level) ;
     }
 }
